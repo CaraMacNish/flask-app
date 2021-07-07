@@ -10,7 +10,7 @@ client = MongoClient("mongodb+srv://cara:gumpt10n@cluster0.gbmri.mongodb.net/wor
 #print(serverStatusResult)
 
 db = client.workout
-#count = db.members.count_documents({})
+count = db.members.count_documents({})
           
 app = Flask(__name__)
 
