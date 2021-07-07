@@ -9,12 +9,13 @@ client = MongoClient("mongodb+srv://cara:gumpt10n@cluster0.gbmri.mongodb.net/wor
 #serverStatusResult=db.command("serverStatus")
 #print(serverStatusResult)
 
-db = client.workout
-count = db.members.count_documents({})
+
           
 app = Flask(__name__)
 
 @app.route('/')
 def index():
+    db = client.workout
+    count = db.members.count_documents({})
     return render_template('index.html', count = count)
 #    return render_template('index.html')
