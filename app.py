@@ -10,7 +10,7 @@ from pymongo import MongoClient
 #serverStatusResult=db.command("serverStatus")
 #print(serverStatusResult)
           
-#app = Flask(__name__)
+app = Flask(__name__)
 
 #db = client.workout
 #count = db.members.count_documents({})
